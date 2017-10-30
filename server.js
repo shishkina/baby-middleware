@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 /* import our own baby middleware */
-const sayHelloMiddleware = require('./sayHelloMiddleware');
+const sayHelloMiddleware = require('./middlewares/sayHelloMiddleware');
 
 /*
 just to compare, I'm importing the morgan package as well, of course I had to `npm install morgan` first
@@ -13,7 +13,7 @@ just to compare, I'm importing the morgan package as well, of course I had to `n
 const logger = require('morgan');
 
 /* import the routes */
-const helloRoute = require('./routes');
+const helloRoute = require('./routes/routes');
 
 /* set the port  to a variable and assign it to 3000 */
 const port = 3000;
